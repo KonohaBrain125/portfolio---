@@ -10,6 +10,7 @@
 :root{
     --color: crimson;
     --dark: #333;
+    --gray: #9b9b9b;
 }
 
 h1, h3{
@@ -51,7 +52,16 @@ h3 {
     color: var(--color)
 }
 
-.btn{
+.form {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn {
+    width: 100%;
     font-size: 1.7rem;
     padding:1rem 10rem;
     border-radius: 1rem;
@@ -60,6 +70,23 @@ h3 {
     color:var(--dark);
     cursor: pointer;
     border:.2rem solid var(--color);
+}
+
+.btn-face {
+    width: 50%;
+    font-size: 1.7rem;
+    padding:1rem 10rem;
+    border-radius: 1rem;
+    margin-top: 3rem;
+    background:none;
+    color:var(--dark);
+    cursor: pointer;
+    border:.2rem solid var(--color);
+}
+
+.btn-face:hover{
+    background:var(--color);
+    color: white;
 }
 
 .btn:hover{
@@ -381,7 +408,7 @@ font-size: 26px;
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
-    background: var(--color);
+    background: var(--gray);
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
@@ -389,9 +416,8 @@ font-size: 26px;
 .services .serv-content .card:hover .box{
     transform: scale(1.05);
 }
-.services .serv-content .card i{
-    font-size: 50px;
-    color: crimson;
+.services .serv-content .card img{
+    width: 100px;
     transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i{
@@ -404,7 +430,7 @@ font-size: 26px;
 }
 
 .par-card {
-font-size: 1.7rem;
+    font-size: 1.7rem;
 }
 
 .container .image-container {
@@ -564,9 +590,13 @@ font-size: 1.7rem;
 }
 
 .message .row form{
-    flex:1 1 50%;
-    background:#fff;
-    padding:3rem;
+    background: #fff;
+    padding: 3rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
 }
 
 .message .row form .box{
@@ -619,7 +649,6 @@ font-size: 1.7rem;
 .footer .box-container .box a{
     font-size: 1.7rem;
     color: var(--dark);
-    padding:1rem;
     display: block;
     font-size: 30px;
 }
@@ -628,22 +657,21 @@ font-size: 1.7rem;
     color:var(--color);
 }
 
-.footer .box-container .box p i{
-    padding-right: .5rem;
-    color:var(--color);
-}
-
 .footer .credit{
     font-size: 1.5rem;
     text-align: center;
-    padding-bottom:0.5rem;
     font-weight: normal;
     letter-spacing: .1rem;
     color:var(--dark);
     margin-bottom: 5rem;
 }
 
+.footer .credit a {
+    color: var(--color);
+}
+
 .fb {
+    gap: 10px;
     display: flex;
     justify-content: center;
 }

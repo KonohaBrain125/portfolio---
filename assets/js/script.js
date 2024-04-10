@@ -28,7 +28,7 @@ function changeActivePosition(activeItem){
 
 // text animation
 
-const words = ['web developer', 'photographer', 'designer']
+const words = ['Full stack developer', 'Mobile Developer', 'Blockchain Developer']
 
 gsap.to(".cursor", {
     opacity: 0,
